@@ -63,4 +63,31 @@
             android:textStyle="bold"/>
     </LinearLayout>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Socios registrados"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Mensaje cuando no hay socios -->
+
+    <TextView
+        android:id="@+id/txtSinSocios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Todavía no hay socios registrados."
+        android:gravity="center"
+        android:padding="12dp"
+        android:visibility="gone" />
+
+    <!-- Lista de socios -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSocios"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
 </LinearLayout>
